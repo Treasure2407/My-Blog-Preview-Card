@@ -1,0 +1,119 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow: hsla(47, 88%, 63%, 0.842);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(10, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+body{
+    background-color: goldenrod;
+    min-height: 100vh;
+    font-family: 'figtree';
+    display: grid;
+    place-content: center;
+    font-weight: 800;    
+   
+}
+    
+.img1{
+    width: 100%;   
+    display: block;
+    border-radius: 16px;
+}
+    
+.card{
+    background-color: white;
+    max-width: 400px;
+    padding: 24px;
+    margin: 16px;
+    position: relative;
+    border-radius: 32px;
+    outline: 1px solid;
+}
+
+.card:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 16px;
+    z-index: -1;
+
+}
+
+
+.reason{
+    width: min-content;
+    font-weight: 800;
+    border-radius: .16px;
+    background-color: goldenrod;
+    margin: 10px;
+}
+
+.date{
+    margin-top: 16px;
+    margin: 7px;
+}
+
+ h1{
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 2;
+    text-decoration: none;
+    margin: 5px;    
+ }
+
+ .card .content{
+    color: grey;
+    line-height: 1.5;
+    margin: 5px;
+    
+    
+ }
+
+ .card .writer{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+ }    
+    
+ .img2{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px;
+        
+ }
+
+.name{
+    position: absolute;
+    padding-left: 10%;
+    font-size: 12px;
+    font-family: cursive;
+    margin: 6%;
+
+}
+
+
+
+ /* media queries (for media responsiveness for phones, ipads and laptops view) */
+@media (max-width: 375px) {
+    .card h1 {
+        font-size: 20px;
+    }
+        
+}
